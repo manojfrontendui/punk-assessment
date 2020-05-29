@@ -7,6 +7,6 @@ export const getBeers = async () => {
 }
 
 export const getBeerDetails = async (beerId) => {
-    const response = await fetch(`${baseURL}beer/${beerId}`);
+    const response = await fetch(`${baseURL}beers/${beerId}`);
     return await response.json();
 }

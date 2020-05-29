@@ -1,5 +1,6 @@
 import React from 'react';
 import './Beer.css';
+import { withRouter } from 'react-router-dom';
 
 function Beer(props) {
     const { beer } = props;
@@ -21,4 +22,4 @@ function Beer(props) {
     )
 }
 
-export default Beer;
+export default withRouter(Beer);
